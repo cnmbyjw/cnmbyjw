@@ -17,9 +17,18 @@
   <div class="mdui-appbar mdui-theme-primary-red mdui-theme-accent-red">
     <div class="mdui-toolbar mdui-color-theme">
       <a href="javascript:;" class="mdui-typo-headline"
-        onclick="document.getElementById('cnmbyjw').play()">岛主与Ming345的灵堂</a>
-      <audio src="yangwei/0111.mp3" controls="controls" preload autoplay loop id="cnmbyjw">
+        onclick="document.getElementById('cnmbyjw').play()">岛主与Ming345的灵堂（点击播放音乐）</a>
+      <audio src="yangwei/0111.mp3" hidden="true" preload="true" autostart="true" loop="true" autoplay="true"
+        id="cnmbyjw">
       </audio>
+      <script>window.onscroll = () => {
+          document.getElementById("cnmbyjw").play();
+        };
+      </script>
+      <script>window.onclick = () => {
+          document.getElementById("cnmbyjw").play();
+        };
+      </script>
     </div>
   </div>
   <div class="mdui-container-fluid"><br><br><br><br>
@@ -30,7 +39,7 @@
             <div class="mdui-card-actions mdui-card-actions-stacked" style="filter: grayscale();">
               <h4>狗叫艺术带师</h4>
               <!img alt="" align="center" src="smt/goujiao014.jpg" width="100%"><br><br>
-              <img alt="" align="center" src="smt/goujiao015.jpg" width="100%">
+                <img alt="" align="center" src="smt/goujiao015.jpg" width="100%">
             </div>
           </div>
         </div>
